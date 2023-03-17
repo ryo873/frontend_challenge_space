@@ -60,13 +60,22 @@ body{
 
 .navbar-inline li{
     display: inline-block;
+    margin-bottom: -100px;
 }
 .navbar-inline li a{
     font-size: 16px;
     letter-spacing: 2.7px;
     margin-right: 40px;
+    padding-bottom: 35px;
 }
 
+.navbar-inline li a:hover{
+    border-bottom: 2px solid #979797;
+}
+
+.navbar-inline li a:active{
+    border-bottom: 2px solid white;
+}
 /* end navbar */
 
 /* content */

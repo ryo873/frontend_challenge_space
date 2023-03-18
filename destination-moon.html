@@ -1,37 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="dist/custom_destination.css" />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet" />
 
-  01 Pick your destination
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="container mx-auto px-4">
+      <div class="navbar">
+        <div class="absolute left-8 logo-space">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <g fill="none" fill-rule="evenodd">
+              <circle cx="24" cy="24" r="24" fill="#FFF" />
+              <path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
+            </g>
+          </svg>
+        </div>
 
-  Moon
-  Mars
-  Europa
-  Titan
+        <div class="rectangle absolute"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" class="hamburger" id="hamburger">
+          <g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" /></g>
+        </svg>
+        <div class="navbar-menu text-white">
+          <div class="text-navbar font-barlow">
+            <ul class="navbar-inline">
+              <li><a href="index.html">00 HOME</a></li>
+              <li><a href="destination-moon.html">01 DESTINATION</a></li>
+              <li><a href="index.html">02 CREW</a></li>
+              <li><a href="index.html">03 TECHNOLOGY</a></li>
+            </ul>
+          </div>
+        </div>
 
-  Moon
+        <!-- mobile toogle -->
+        <div class="mobile-toogle">
+          <div class="navbar-menu-sm text-white" id="navbarToogle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" class="close-button" id="closeButton">
+              <g fill="#D0D6F9" fill-rule="evenodd">
+                <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+                <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+              </g>
+            </svg>
+            <div class="text-navbar font-barlow list-sm">
+              <ul>
+                <li><a href="index.html">00 Home</a></li>
+                <li><a href="destination-moon.html">01 Destination</a></li>
+                <li><a href="index.html">02 Crew</a></li>
+                <li><a href="index.html">03 Technology</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pick-destination font-barlow text-white">01 PICK YOUR DESTINATION</div>
+      <img src="./assets/destination/image-moon.png" alt="moon-image" loading="lazy" class="moon-img" />
+      <div class="navbar-menu-destination text-white">
+        <div class="text-navbar-destination font-barlow">
+          <ul class="navbar-inline-destination">
+            <li><a href="destination-moon.html">MOON</a></li>
+            <li><a href="index.html">MARS</a></li>
+            <li><a href="index.html">EUROPA</a></li>
+            <li><a href="index.html">TITAN</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-main">
+        <p class="font-bellefair text-white text-8xl tracking-wide mt-6 mb-8 moon-text">MOON</p>
+        <p class="font-barlow text-white moon-text-main">
+          See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+        <hr class="mt-8 block" />
+        <div class="stat flex flex-row">
+          <div class="basis-1/2">
+            <h4 class="text-white font-barlow text-lg tracking-wide">AVG. DISTANCE</h4>
+            <p class="text-white font-barlow text-3xl tracking-wide">384,400 km Est.</p>
+          </div>
+          <div class="basis-1/2">
+            <h4 class="text-white font-barlow text-lg tracking-wide">EST. TRAVEL TIME</h4>
+            <p class="text-white font-barlow text-3xl tracking-wide">3 days</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
-</body>
+    <script src="dist/script.js"></script>
+  </body>
 </html>

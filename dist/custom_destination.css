@@ -1,0 +1,222 @@
+body {
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  height: 900px;
+  background-size: cover;
+}
+
+.navbar {
+  position: absolute;
+  width: 500px;
+  height: 96px;
+  left: 55px;
+  top: 40px;
+}
+
+.logo-space {
+  top: 4rem;
+}
+
+.hamburger {
+  display: none;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+
+.rectangle {
+  width: 35vmax;
+  height: 1px;
+  left: 12rem;
+  top: 88px;
+  z-index: 3;
+  background-color: #fff;
+  opacity: 0.25;
+  mix-blend-mode: normal;
+}
+
+.navbar-menu {
+  position: absolute;
+  width: 46.5vw;
+  height: 96px;
+  left: 47.5vw;
+  top: 40px;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  text-align: center;
+  line-height: 96px;
+  padding-left: 12px;
+}
+
+.navbar-menu-sm {
+  display: none;
+}
+
+.close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.navbar-inline li {
+  display: inline-block;
+  margin-bottom: -100px;
+}
+.navbar-inline li a {
+  font-size: 14px;
+  letter-spacing: 2.7px;
+  margin-right: 40px;
+  padding-bottom: 35px;
+}
+
+.navbar-inline li a:hover {
+  border-bottom: 2px solid #979797;
+}
+
+.navbar-inline li a:active {
+  border-bottom: 2px solid white;
+}
+
+/* end navbar */
+
+/* content */
+.pick-destination {
+  font-size: 28px;
+  width: 382px;
+  height: 34px;
+  position: absolute;
+  top: 40vh;
+  left: 19vw;
+}
+
+.moon-img {
+  position: absolute;
+  width: 445px;
+  height: 445px;
+  left: 22vw;
+  top: 58vh;
+}
+
+.navbar-menu-destination {
+  position: absolute;
+  width: 46.5vw;
+  height: 96px;
+  left: 49vw;
+  top: 42vh;
+  text-align: center;
+  line-height: 96px;
+  padding-left: 12px;
+}
+
+.navbar-inline-destination li {
+  display: inline-block;
+  margin-bottom: -20px;
+}
+
+.navbar-inline-destination li a {
+  font-size: 13px;
+  letter-spacing: 2.7px;
+  margin-right: 40px;
+  padding-bottom: 10px;
+}
+
+.navbar-inline-destination li a:hover {
+  border-bottom: 2px solid #979797;
+}
+
+.navbar-inline-destination li a:active {
+  border-bottom: 2px solid white;
+}
+
+.text-main {
+  position: absolute;
+  width: 445px;
+  height: 472px;
+  left: 60vw;
+  top: 52vh;
+}
+
+.moon-text-main {
+  line-height: 32px;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS Tablet*/
+  body {
+    height: 100%;
+    background-image: url("../assets/home/background-home-tablet.jpg");
+    height: 1300px;
+  }
+
+  .logo-space {
+    top: -10px;
+  }
+
+  .rectangle {
+    display: none;
+  }
+
+  .navbar-menu {
+    width: 450px;
+    top: -40px;
+    left: 50vw;
+  }
+
+  .navbar-inline li a {
+    font-size: 10px;
+  }
+
+  .text-main {
+    left: 30vw;
+    text-align: center;
+  }
+
+  .navbar-menu-sm {
+    display: none;
+  }
+
+  .navbar-inline li a {
+    font-size: 9px;
+    letter-spacing: 2.7px;
+    margin-right: 40px;
+    padding-bottom: 35px;
+  }
+
+  .pick-destination {
+    font-size: 20px;
+    width: 382px;
+    height: 24px;
+    position: absolute;
+    top: 15vh;
+    left: 9vw;
+  }
+
+  .moon-img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 35vw;
+    top: 28vh;
+  }
+
+  .navbar-menu-destination {
+    position: absolute;
+    top: 65vh;
+    left: 29vw;
+  }
+
+  .navbar-inline-destination li a {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin-right: 40px;
+    padding-bottom: 10px;
+  }
+
+  .text-main {
+    position: absolute;
+    width: 573px;
+    height: 472px;
+    left: 23vw;
+    top: 80vh;
+  }
+}

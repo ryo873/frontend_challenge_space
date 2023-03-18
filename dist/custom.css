@@ -26,7 +26,7 @@ body {
 .rectangle {
   width: 35vmax;
   height: 1px;
-  left: 12rem;
+  left: 10rem;
   top: 88px;
   z-index: 3;
   background-color: #fff;
@@ -36,7 +36,7 @@ body {
 
 .navbar-menu {
   position: absolute;
-  width: 600px;
+  width: 46.5vw;
   height: 96px;
   left: 47.5vw;
   top: 40px;
@@ -44,6 +44,7 @@ body {
   backdrop-filter: blur(40.7742px);
   text-align: center;
   line-height: 96px;
+  padding-left: 12px;
 }
 
 .navbar-menu-sm {
@@ -61,7 +62,7 @@ body {
   margin-bottom: -100px;
 }
 .navbar-inline li a {
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 2.7px;
   margin-right: 40px;
   padding-bottom: 35px;
@@ -148,6 +149,13 @@ body {
 
   .navbar-menu-sm {
     display: none;
+  }
+
+  .navbar-inline li a {
+    font-size: 9px;
+    letter-spacing: 2.7px;
+    margin-right: 40px;
+    padding-bottom: 35px;
   }
 }
 

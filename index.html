@@ -17,11 +17,19 @@
     <main>
       <div class="container mx-auto px-4">
         <div class="navbar">
-          <div class="clipath absolute left-0">
-            <div class="path"></div>
+          <div class="absolute left-8 logo-space">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+              <g fill="none" fill-rule="evenodd">
+                <circle cx="24" cy="24" r="24" fill="#FFF" />
+                <path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
+              </g>
+            </svg>
           </div>
 
           <div class="rectangle absolute"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" class="hamburger" id="hamburger">
+            <g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" /></g>
+          </svg>
           <div class="navbar-menu text-white">
             <div class="text-navbar font-barlow">
               <ul class="navbar-inline">
@@ -32,24 +40,46 @@
               </ul>
             </div>
           </div>
+
+          <!-- mobile toogle -->
+          <div class="mobile-toogle">
+            <div class="navbar-menu-sm text-white" id="navbarToogle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" class="close-button" id="closeButton">
+                <g fill="#D0D6F9" fill-rule="evenodd">
+                  <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+                  <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+                </g>
+              </svg>
+              <div class="text-navbar font-barlow list-sm">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.html">Destination</a></li>
+                  <li><a href="index.html">Crew</a></li>
+                  <li><a href="index.html">Technology</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="content">
           <div class="text-main">
-            <p class="font-barlow text-white text-4xl tracking-wide">So, you want to travel to</p>
+            <p class="font-barlow text-white text-4xl tracking-wide p-1">SO, TOU WANT TO TRAVEL TO</p>
             <p class="font-bellefair text-white text-9xl tracking-wide mt-6 mb-8 space">SPACE</p>
-            <p class="font-barlow text-white text-lg">
+            <p class="font-barlow text-white text-lg p-3">
               Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
             </p>
           </div>
 
           <div class="rounded-full bg-white custom-width">
             <a href="index.html">
-              <p class="font-bellefair text-7xl text-black font-light custom-height">Explore</p>
+              <p class="font-bellefair text-7xl sm:text-sm text-black font-light custom-height">EXPLORE</p>
             </a>
           </div>
         </div>
       </div>
     </main>
+
+    <script src="dist/script.js"></script>
   </body>
 </html>

@@ -112,7 +112,6 @@ body {
   body {
     height: 100%;
     background-image: url("../assets/home/background-home-tablet.jpg");
-    height: 1300px;
   }
 
   .logo-space {
@@ -164,6 +163,7 @@ body {
   body {
     height: 100vh;
     background-image: url("../assets/home/background-home-mobile.jpg");
+    background-size: cover;
   }
 
   .logo-space {

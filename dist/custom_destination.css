@@ -92,7 +92,7 @@ body {
   position: absolute;
   width: 445px;
   height: 445px;
-  left: 22vw;
+  left: 18vw;
   top: 58vh;
 }
 
@@ -144,8 +144,7 @@ body {
   /* CSS Tablet*/
   body {
     height: 100%;
-    background-image: url("../assets/home/background-home-tablet.jpg");
-    height: 1300px;
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
   }
 
   .logo-space {
@@ -218,5 +217,148 @@ body {
     height: 472px;
     left: 23vw;
     top: 80vh;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS Smartphone*/
+  body {
+    height: 100vh;
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+    background-size: cover;
+  }
+
+  .logo-space {
+    top: -20px;
+    left: -20px;
+  }
+
+  .navbar {
+    width: 85vw;
+  }
+
+  .rectangle {
+    display: none;
+  }
+
+  .navbar-menu {
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
+
+  .pick-destination {
+    font-size: 20px;
+    height: 24px;
+    width: 200px;
+    position: absolute;
+    top: 8vh;
+    left: 28vw;
+  }
+
+  .moon-img {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    left: 30vw;
+    top: 15vh;
+  }
+
+  .navbar-menu-destination {
+    position: absolute;
+    top: 32vh;
+    left: 2vw;
+    width: 400px;
+  }
+
+  .navbar-inline-destination li a {
+    font-size: 12px;
+  }
+
+  .moon-text {
+    font-size: 56px !important;
+  }
+
+  .text-main {
+    top: 39vh;
+    left: 9vw;
+    text-align: center;
+    width: 327px;
+    position: absolute;
+  }
+
+  .moon-text-main {
+    font-size: 15px;
+  }
+
+  .stat {
+    flex-direction: column;
+  }
+
+  .stat-text {
+    margin-top: 20px;
+  }
+
+  .custom-width {
+    width: 150px;
+    height: 150px;
+    left: 32vw;
+    top: 58vh;
+    text-align: center;
+  }
+
+  .custom-height {
+    line-height: 150px;
+    font-size: 20px;
+  }
+
+  .navbar-menu-sm {
+    text-align: center;
+    position: absolute;
+    display: block;
+    top: 0px;
+    right: -1vw;
+    opacity: 0;
+    width: 64vw;
+    height: 100vh;
+    margin-left: 120px;
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    text-align: center;
+    line-height: 50px;
+    transition: opacity 1s;
+    z-index: 999;
+  }
+
+  .active {
+    opacity: 1;
+    top: -39px;
+    /* display: block; */
+    /* margin-left: 50px; */
+    /* display: block; */
+    /* transition: margin-left 1.5s, display 1.5s; */
+  }
+
+  .close {
+    opacity: 0;
+    top: -39px;
+    z-index: -1;
+    /* display: none; */
+    /* margin-left: 350px; */
+    /* display: none; */
+    /* transition: margin-left 1.5s, display 1.5s; */
+  }
+
+  .hamburger {
+    display: block;
+    top: -10px;
+    left: 72vw;
+  }
+
+  .list-sm {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    padding: 40px;
   }
 }

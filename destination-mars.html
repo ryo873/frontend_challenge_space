@@ -14,7 +14,84 @@
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
-    00 Home 01 Destination 02 Crew 03 Technology 01 Pick your destination Moon Mars Europa Titan Mars Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s
-    two and a half times the size of Everest! Avg. distance 225 mil. km Est. travel time 9 months
+    <main>
+      <div class="container mx-auto px-4">
+        <div class="navbar">
+          <div class="absolute left-8 logo-space">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+              <g fill="none" fill-rule="evenodd">
+                <circle cx="24" cy="24" r="24" fill="#FFF" />
+                <path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
+              </g>
+            </svg>
+          </div>
+
+          <div class="rectangle absolute"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" class="hamburger" id="hamburger">
+            <g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" /></g>
+          </svg>
+          <div class="navbar-menu text-white">
+            <div class="text-navbar font-barlow">
+              <ul class="navbar-inline">
+                <li><a href="index.html">00 HOME</a></li>
+                <li><a href="destination-moon.html">01 DESTINATION</a></li>
+                <li><a href="index.html">02 CREW</a></li>
+                <li><a href="index.html">03 TECHNOLOGY</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- mobile toogle -->
+          <div class="mobile-toogle">
+            <div class="navbar-menu-sm text-white" id="navbarToogle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" class="close-button" id="closeButton">
+                <g fill="#D0D6F9" fill-rule="evenodd">
+                  <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+                  <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+                </g>
+              </svg>
+              <div class="text-navbar font-barlow list-sm">
+                <ul>
+                  <li><a href="index.html">00 Home</a></li>
+                  <li><a href="destination-moon.html">01 Destination</a></li>
+                  <li><a href="index.html">02 Crew</a></li>
+                  <li><a href="index.html">03 Technology</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-1 lg:gap-1 lg:text-left"><h1 class="text-white lg:text-3xl font-barlow tracking-wide lg:mt-60 lg:ml-36 md:text-2xl md:mt-48 md:ml-0">01 PICK YOUR DESTINATION</h1></div>
+        <div class="grid lg:grid-cols-2 lg:gap-2 lg:mt-12 md:grid-cols-1 md:gap-1 md:mt-20 md:ml-36">
+          <div class="lg:w-80 lg:ml-16 md:w-60 md:ml-24">
+            <img src="./assets/destination/image-mars.webp" alt="image-mars" />
+          </div>
+          <div class="lg:w-96 md:w-80">
+            <ul class="text-white font-barlow lg:ml-0 lg:mt-0 lg:text-xl lg:tracking-widest md:text-2xl md:ml-24 md:mt-2">
+              <li class="inline-block"><a class="bd-hov" href="destination-moon.html">MOON</a></li>
+              <li class="inline-block"><a class="border-b-2" href="destination-mars.html">MARS</a></li>
+              <li class="inline-block"><a class="bd-hov" href="index.html">EUROPA</a></li>
+              <li class="inline-block"><a class="bd-hov" href="index.html">TITAN</a></li>
+            </ul>
+            <span class="text-white font-bellefair lg:ml-0 lg:text-8xl lg:mt-9 inline-block md:text-7xl md:mt-7 md:ml-28">MARS</span>
+            <p class="font-barlow text-blueLight lg:text-lg lg:text-left md:text-center">
+              Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!
+            </p>
+            <hr class="blueLight lg:mt-5" />
+            <div class="stat flex lg:flex-grow md:flex-col">
+              <div class="lg:basis-1/2">
+                <h4 class="text-white font-barlow lg:text-lg tracking-wide">AVG. DISTANCE</h4>
+                <p class="text-white font-barlow lg:text-3xl tracking-wide">225 MIL. KM</p>
+              </div>
+              <div class="lg:basis-1/2">
+                <h4 class="text-white font-barlow lg:text-lg tracking-wide">EST. TRAVEL TIME</h4>
+                <p class="text-white font-barlow lg:text-3xl tracking-wide">9 MONTHS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="dist/script.js"></script>
   </body>
 </html>

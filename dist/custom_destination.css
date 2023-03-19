@@ -72,6 +72,15 @@ body {
   border-bottom: 2px solid #979797;
 }
 
+/* tailwind hover */
+.bd-hov:hover {
+  border-bottom: 2px solid #979797;
+}
+
+.bd-hov:active {
+  border-bottom: 2px solid white;
+}
+
 .navbar-inline li a:active {
   border-bottom: 2px solid white;
 }
